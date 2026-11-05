@@ -1,0 +1,16 @@
+{
+  "total_steps": 100000,
+  "episodes": 1342,
+  "training_success_rate": 0.8688524590163934,
+  "gradient_updates": 24751,
+  "device": "cpu",
+  "seconds": 44.55,
+  "steps_per_second": 2244.47,
+  "final_evaluation": {
+    "mean_return": -1.1890932078361487,
+    "success_rate": 0.0,
+    "mean_length": 200.0
+  },
+  "best_evaluation_success_rate": 0.95,
+  "output_directory": "results/learning_probe"
+}

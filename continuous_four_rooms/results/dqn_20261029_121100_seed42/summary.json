@@ -1,0 +1,16 @@
+{
+  "total_steps": 100000,
+  "episodes": 1256,
+  "training_success_rate": 0.8495222929936306,
+  "gradient_updates": 24751,
+  "device": "cpu",
+  "seconds": 103.48,
+  "steps_per_second": 966.4,
+  "final_evaluation": {
+    "mean_return": 1.2482046682212502,
+    "success_rate": 0.99,
+    "mean_length": 31.78
+  },
+  "best_evaluation_success_rate": 0.99,
+  "output_directory": "results/dqn_20261029_121100_seed42"
+}

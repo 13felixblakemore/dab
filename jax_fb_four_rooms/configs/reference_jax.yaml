@@ -1,0 +1,40 @@
+# Equivalent FB settings with fully JAX-native execution.
+environment:
+  explorable: false
+  size: 1.0
+  step_size: 0.05
+  movement_noise: 0.005
+  include_stay_action: false
+features:
+  mode: rbf
+  dim: 21
+  sigma: 0.05
+  size: 1.0
+agent:
+  obs_dim: 2
+  n_actions: 4
+  embed_dim: 50
+  hidden_dim: 256
+  num_layers: 2
+  batch_size: 128
+  learning_rate: 0.0005
+  discount_factor: 0.99
+  reg_coef: 1.0
+  temperature: 200.0
+  polyak_coef: 0.95
+  zero_z_p: 0.25
+  z_sampling: cauchy  # set replay_goal to use z = B(s_goal)
+  max_grad_norm: null
+training:
+  epochs: 800
+  transitions_per_epoch: 3000
+  rollout_horizon: 30
+  updates_per_epoch: 40
+  min_buffer_size: 128
+  buffer_size: 1000000
+  seed: 1
+  output_dir: results/reference_jax
+  checkpoint_every: 100
+  plot: true
+  backend: jax
+  num_envs: 25

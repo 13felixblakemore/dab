@@ -1,0 +1,20 @@
+# Quick pipeline test, NOT a meaningful convergence experiment.
+agent:
+  hidden_sizes: [32, 32]
+  replay_capacity: 1000
+  target_update_interval: 5
+  epsilon_decay_steps: 50
+training:
+  total_steps: 100
+  learning_starts: 16
+  train_frequency: 2
+  batch_size: 16
+  eval_interval: 50
+  eval_episodes: 2
+  log_interval: 50
+environment:
+  max_episode_steps: 25
+output:
+  directory: results/smoke
+  plot_curve: true
+  rolling_window: 3

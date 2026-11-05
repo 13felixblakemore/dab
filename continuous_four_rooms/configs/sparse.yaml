@@ -1,0 +1,5 @@
+# Sparse goal reward + time penalty; this can be substantially harder for DQN.
+environment:
+  shaping_scale: 0.0
+output:
+  directory: null

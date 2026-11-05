@@ -1,0 +1,6 @@
+# No Flax or Optax required. Install jax[cuda12] instead of jax for supported CUDA setups.
+jax>=0.4.30
+numpy>=1.26
+PyYAML>=6.0
+matplotlib>=3.8
+pytest>=8.0

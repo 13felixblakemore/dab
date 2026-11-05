@@ -1,0 +1,8 @@
+{
+  "checkpoint": "results/learning_probe/best.pt",
+  "episodes": 100,
+  "seed": 55555,
+  "mean_return": 1.0037261817274616,
+  "success_rate": 0.9,
+  "mean_length": 47.62
+}
